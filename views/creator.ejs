@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/charcounter.js"></script>
+	<title>Poll creator</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Poll creator</h1>
+		<p>Welcome to the poll creator! Write your question below and the answers you want to want what the answers of people are!</p>
+		<hr>
+		<form action="/add" method="post">
+			<textarea name="question" id="question" cols="30" rows="10" maxlength="1000"></textarea>
+			<p id="char-counter">0/1000</p>
+
+			<div id="entries">
+				<div class="entry">
+					<input type="text" name="ans1" id="ans1">
+					<button type="button" class="add" id="r-ans1">X</button>
+				</div>
+				<div class="entry">
+					<input type="text" name="ans2" id="ans2">
+					<button type="button" class="add" id="r-ans2">X</button>
+				</div>
+				<div class="entry">
+					<input type="text" name="ans3" id="ans3">
+					<button type="button" class="add" id="r-ans3">X</button>
+				</div>
+			</div>
+			
+			<button type="button" id="add">Add answer</button>
+
+			<hr>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
