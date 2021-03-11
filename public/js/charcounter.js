@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener("DOMContentLoaded", () => {
 	let textarea = document.getElementById('question');
 	let charCounter = document.getElementById('char-counter');
 	let maxCharacters = 1000;
@@ -8,4 +8,4 @@ window.onload = () => {
 	textarea.addEventListener('input', () => {
 		charCounter.innerHTML = `${textarea.value.length}/${maxCharacters}`;
 	});
-}
+});
