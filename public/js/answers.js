@@ -6,7 +6,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	let addEntryButton = document.getElementById('add');
 
 	current_answers_count = document.getElementsByClassName('entry').length;
-	console.log(current_answers_count);
 
 	addEntryButton.addEventListener('click', () => {
 		if (current_answers_count < max_answers)
